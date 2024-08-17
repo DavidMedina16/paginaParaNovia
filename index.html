@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fin de semana juntos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Página inicial -->
+<div id="inicio">
+    <h1>¿Quieres pasar el fin de semana conmigo?</h1>
+    <div class="imagenes">
+        <!-- Aquí puedes añadir tus fotos -->
+        <img src="./assets/imagen1.jpg" alt="Foto 1">
+        <img src="./assets/imagen2.jpg" alt="Foto 2">
+        <img src="./assets/imagen3.jpg" alt="Foto 3">
+    </div>
+    <div class="botones">
+        <button onclick="mostrarItinerario()">Sí</button>
+        <button onclick="mostrarEmoji()">No</button>
+    </div>
+</div>
+
+<!-- Página de itinerario -->
+<div id="itinerario" class="oculto">
+    <h2>Elige un día:</h2>
+    <button onclick="mostrarDia('sabado')">Sábado</button>
+    <button onclick="mostrarDia('domingo')">Domingo</button>
+    <button onclick="mostrarDia('lunes')">Lunes</button>
+
+    <div id="sabado" class="dia oculto">
+        <h3>Itinerario del Sábado</h3>
+        <ul>
+            <li>Tarde de tacos (Para el almuerzo)</li>
+            <li>Descansito</li>
+            <li>Iremos al supermercado a hacer un minimercado para los dos</li>
+            <li>Prepararemos una pizza</li>
+            <li>Comeremos la pizza</li>
+            <li>Jugaremos stop</li>
+            <li>Jugaremos un jueguito de mesa</li>
+            <li>Veremos pelis</li>
+        </ul>
+    </div>
+
+    <div id="domingo" class="dia oculto">
+        <h3>Itinerario del domingo</h3>
+        <ul>
+            <li>Nos levantaremos temprano: 8am</li>
+            <li>Desayunamos keloz</li>
+            <li>Iremos a misa con los perros</li>
+            <li>Haremos una receta para el almuerzo</li>
+            <li>Comeremos el almuerzo</li>
+            <li>Miramos si me dejas jugar Val con mis amigos y tu miras tu serie</li>
+            <li>Veremos una serie corta entre los dos</li>
+            <li>Dormir mucho como te gusta</li>
+        </ul>
+    </div>
+
+    <div id="lunes" class="dia oculto">
+        <h3>Itinerario del domingo</h3>
+        <ul>
+            <li>Nos levantaremos tarde</li>
+            <li>lavaremos ropita</li>
+            <li>Haremos todo lo que tu quieras</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Emoji triste -->
+<div id="emoji" class="oculto">
+    <h2>😭</h2>
+    <p>¡Qué pena! Espero que cambies de opinión.</p>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
